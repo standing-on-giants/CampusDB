@@ -10,7 +10,7 @@ A comprehensive Java-based database management system designed originally for un
 - **Room Management**: Add rooms and update capacity
 - **Grade Tracking**: Record and retrieve student grades
 - **Enrollment System**: Manage student course enrollments
-- **Room Reservations**: Handle room booking and scheduling
+- **Room Reservations**: Handle room booking and scheduling 
 
 ### Database Operations
 - Complete CRUD (Create, Read, Update, Delete) operations
