@@ -1,8 +1,8 @@
-# CampusDB - MySQL-based Database Application
+# CampusDB: MySQL-based Database Application
 
-A comprehensive Java-based database management system for campus administration, built using JDBC and MySQL. This application provides a terminal-based interface for managing students, courses, rooms, enrollments, grades, and reservations.
+A comprehensive Java-based database management system designed originally for universities, but can be easily extended to any organization. Built using JDBC and MySQL, this application provides a terminal-based interface for managing students, courses, rooms, enrollments, grades, and reservations.
 
-## 🎯 Features
+## Features
 
 ### Core Functionalities
 - **Student Management**: Add, remove, and edit student information
@@ -18,7 +18,7 @@ A comprehensive Java-based database management system for campus administration,
 - Foreign key constraints for data integrity
 - Interactive menu-driven interface
 
-## 🏗️ Database Schema
+## Database Schema
 
 The system includes the following entities:
 
@@ -29,13 +29,13 @@ The system includes the following entities:
 - **ROOMS**: Room information (roomNo, capacity)
 - **RESERVATION**: Room reservations (reservationID, roomNo, reservationDate, reservationDurationInMonths)
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Java Development Kit (JDK) 8 or higher
 - MySQL Server 5.7 or higher
 - MySQL Connector/J (JDBC Driver)
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### 1. Database Setup
 ```sql
@@ -70,7 +70,7 @@ javac -cp ".:mysql-connector-java-x.x.x.jar" JdbcDemo.java
 java -cp ".:mysql-connector-java-x.x.x.jar" JdbcDemo
 ```
 
-## 💻 Usage
+## Usage
 
 The application provides an interactive menu with the following options:
 
@@ -97,7 +97,7 @@ The application provides an interactive menu with the following options:
 ### Exit
 - **18**: Exit the application
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 CampusDB/
@@ -113,15 +113,14 @@ CampusDB/
 └── README.md
 ```
 
-## 🔧 Key Technical Features
+## Key Technical Features
 
 - **Transaction Management**: Automatic commit/rollback for data consistency
-- **Error Handling**: Comprehensive exception handling for database operations
+- **Error Handling**: Major exceptions handled for database operations
 - **Data Validation**: Checks for existing records before operations
-- **Prepared Statements**: Protection against SQL injection
 - **Foreign Key Constraints**: Maintains referential integrity
 
-## 📊 Sample Operations
+## Sample Operations
 
 ### Adding a Student
 ```
@@ -145,15 +144,15 @@ Reservation duration (in months): 6
 Reservation date (DD-MM-YYYY): 15-03-2024
 ```
 
-## 🛡️ Error Handling
+## Error Handling
 
-The application includes robust error handling for:
+The application provides robust error handling including:
 - Database connection failures
-- SQL constraint violations
-- Invalid user input
 - Transaction rollback scenarios
+- Non-existent records
+- Resource cleanup after termination
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
@@ -161,14 +160,8 @@ The application includes robust error handling for:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is part of an academic assignment for CS 301P Database Systems Lab.
-
-## 📧 Contact
+## Contact
 
 For questions or suggestions, please open an issue in the repository.
 
 ---
-
-**Note**: This application was developed as part of a database systems lab project focusing on JDBC programming and database management concepts.
